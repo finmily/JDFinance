@@ -1,18 +1,19 @@
 <template lang="html">
-    <div :class="$style.home">
-        <h1>Home</h1>
+    <div>
+        <heador/>
     </div>
 </template>
 
 <script>
+import heador from '../public/header.vue';
 export default {
+  components:{
+    heador,
+  }
 }
 </script>
 
 <style lang="scss" module>
   @import '../../css/reset.scss';
-  .home{
-    color: red;
-    font-size: 80px;
-  }
+  
 </style>

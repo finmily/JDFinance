@@ -5,7 +5,7 @@
         <router-link :to="{name : item.href}">
           <img :src="item.src">
         </router-link>
-        <div class="swiper-pagination" v-if="options. "></div>
+        <div class="swiper-pagination" v-if="options.pagination "></div>
       </swiper-slide>
     </swiper>
   </section>
