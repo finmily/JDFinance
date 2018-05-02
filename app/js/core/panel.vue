@@ -1,33 +1,33 @@
-<template>
-  <section :class="[pannelClass,cname]">
-    <h4>-{{ title }}-</h4>
-    <slot/>
-  </section>
+<template lang="html">
+    <section :class="[panelClass,cname]">
+        <h4>-{{ title }}-</h4>
+        <slot/>
+    </section>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      pannelClass: "pannel"
-    };
-  },
-  props: {
-    cname: {
-      type: String,
-      default: ""
+    props: {
+        cname: {
+            type: String,
+            default: "",
+        },
+        title: {
+            type: String,
+            default: "",
+        },
     },
-    title: {
-      type: String,
-      default: ""
-    }
-  }
-};
+    data() {
+        return {
+            panelClass: "panel",
+        }
+    },
+}
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   @import "../../css/element.scss";
-  .pannel {
-    @include pannel;
+  .panel{
+    @include panel;
   }
 </style>
